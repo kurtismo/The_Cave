@@ -38,8 +38,50 @@ public class MainGame extends AppCompatActivity {
     }
     public void mainGame() {
         //Sets next part of story
+        Button btnConfirm = findViewById(R.id.btnConfirm);
+        btnConfirm.setVisibility(View.GONE);
+        EditText txtInput = findViewById(R.id.txtInput);
+        txtInput.setVisibility(View.GONE);
         String StoryIntro2 = getResources().getString(R.string.StoryIntro2, playerName);
         TextView lblStory = findViewById(R.id.lblStory);
         lblStory.setText(StoryIntro2);
+
+        Button btnOptionA = findViewById(R.id.btnOptionA);
+        btnOptionA.setVisibility(View.VISIBLE);
+        btnOptionA.setText(getResources().getString(R.string.StartOption1));
+
+        Button btnOptionB = findViewById(R.id.btnOptionB);
+        btnOptionB.setVisibility(View.VISIBLE);
+        btnOptionB.setText(getResources().getString(R.string.StartOption2));
+
+        Button btnOptionC = findViewById(R.id.btnOptionC);
+        btnOptionC.setVisibility(View.VISIBLE);
+        btnOptionC.setText(getResources().getString(R.string.StartOption3));
+
+        btnOptionA.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                //When button pressed, creates a variable for the text field then stores the text into playerName
+                startOption1Track();
+            }
+        });
+
+    }
+
+    public void startOption1Track () {
+        TextView lblStory = findViewById(R.id.lblStory);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/TitleFont.ttf");
+
+        lblStory.setText(getResources().getString(R.string.Track1Intro));
+        lblStory.setTypeface(font);
+
+        Button btnOptionA = findViewById(R.id.btnOptionA);
+        btnOptionA.setText(getResources().getString(R.string.Track1StartOption1));
+
+        Button btnOptionB = findViewById(R.id.btnOptionB);
+        btnOptionB.setText(getResources().getString(R.string.Track1StartOption2));
+
+        Button btnOptionC = findViewById(R.id.btnOptionC);
+        btnOptionC.setText(getResources().getString(R.string.Track1StartOption3));
+
     }
 }
