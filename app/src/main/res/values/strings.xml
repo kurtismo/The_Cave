@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">The Cave</string>
+
+    <string name="StoryIntro1">You wake up inside what appears to be some kind of cave.
+    You sit and wonder for a while. You have no idea how you got here. All you can remember
+    is your name. What was that again?</string>
+
+    <string name="StoryIntro2">Aaah yes, that was it: %1$s!</string>
+</resources>
