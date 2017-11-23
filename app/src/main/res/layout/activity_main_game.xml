@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="@drawable/background_gradient"
     tools:context="com.thecave.s4922945.thecave.MainGame"
     tools:layout_editor_absoluteY="25dp">
 
@@ -60,7 +60,7 @@
         android:layout_width="286dp"
         android:layout_height="52dp"
         android:layout_marginBottom="10dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/shape"
         android:text="Button"
         android:visibility="invisible"
