@@ -35,11 +35,11 @@ public class MainGame extends AppCompatActivity {
                 //When button pressed, creates a variable for the text field then stores the text into playerName
                 EditText txtInput = findViewById(R.id.txtInput);
                 playerName = txtInput.getText().toString();
-                mainGame();
+                mainGame(false);
             }
         });
     }
-    public void mainGame() {
+    public void mainGame(boolean doneBefore) {
         //Sets first part of story
         Button btnConfirm = findViewById(R.id.btnConfirm);
         btnConfirm.setVisibility(View.GONE);
@@ -47,7 +47,13 @@ public class MainGame extends AppCompatActivity {
         txtInput.setVisibility(View.GONE);
         String StoryIntro2 = getResources().getString(R.string.StoryIntro2, playerName);
         TextView lblStory = findViewById(R.id.lblStory);
-        lblStory.setText(StoryIntro2);
+        if(!doneBefore) {
+            lblStory.setText(StoryIntro2);
+        }
+        else {
+            lblStory.setText(getResources().getString(R.string.beenBefore));
+        }
+
 
         //Stand up and look around
         Button btnOptionA = findViewById(R.id.btnOptionA);
@@ -198,24 +204,37 @@ public class MainGame extends AppCompatActivity {
         lblStory.setText(getResources().getString(R.string.Track2Intro, playerName));
         lblStory.setTypeface(font);
 
-        Button btnOptionA = findViewById(R.id.btnOptionA);
-        btnOptionA.setText(getResources().getString(R.string.Track2StartOption1));
-
         Button btnOptionB = findViewById(R.id.btnOptionB);
-        btnOptionB.setText(getResources().getString(R.string.Track2StartOption2));
+        btnOptionB.setText(getResources().getString(R.string.Track2StartOption1));
+
+        Button btnOptionA = findViewById(R.id.btnOptionA);
+        btnOptionA.setText(getResources().getString(R.string.Track2StartOption2));
 
         Button btnOptionC = findViewById(R.id.btnOptionC);
         btnOptionC.setText(getResources().getString(R.string.Track2StartOption2));
 
-        btnOptionA.setOnClickListener(new View.OnClickListener() {
+        btnOptionB.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Track_2_1_1();
+            }
+        });
+
+        btnOptionA.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                mainGame(true);
+            }
+        });
+
+        btnOptionC.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                mainGame(true);
             }
         });
 
     }
 
     public void Track_2_1_1() {
+        //Lever pulled, door opens, giant about to give chase
         TextView lblStory = findViewById(R.id.lblStory);
         Typeface font = Typeface.createFromAsset(getAssets(), "fonts/TitleFont.ttf");
 
@@ -239,6 +258,11 @@ public class MainGame extends AppCompatActivity {
         btnOptionB.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
                 startMilestone1BadEnding(false);
+            }
+        });
+        btnOptionC.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Track_2_1_1_3();
             }
         });
     }
@@ -296,13 +320,13 @@ public class MainGame extends AppCompatActivity {
         lblStory.setTypeface(font);
 
         Button btnOptionA = findViewById(R.id.btnOptionA);
-        btnOptionA.setText("");
+        btnOptionA.setVisibility(View.INVISIBLE);
 
         Button btnOptionB = findViewById(R.id.btnOptionB);
         btnOptionB.setText(getResources().getString(R.string.die));
 
         Button btnOptionC = findViewById(R.id.btnOptionC);
-        btnOptionC.setText("");
+        btnOptionC.setVisibility(View.INVISIBLE);
 
         btnOptionB.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
@@ -310,5 +334,100 @@ public class MainGame extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnOptionA.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+
+            }
+        });
+
+        btnOptionC.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+
+            }
+        });
+    }
+
+    public void Track_2_1_1_3() {
+        TextView lblStory = findViewById(R.id.lblStory);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/TitleFont.ttf");
+
+        lblStory.setText(getResources().getString(R.string.Track_2_1_1_3_0));
+        lblStory.setTypeface(font);
+
+        Button btnOptionA = findViewById(R.id.btnOptionA);
+        btnOptionA.setText(getResources().getString(R.string.Track_2_1_1_3_1));
+
+        Button btnOptionB = findViewById(R.id.btnOptionB);
+        btnOptionB.setText(getResources().getString(R.string.Track_2_1_1_3_2));
+
+        Button btnOptionC = findViewById(R.id.btnOptionC);
+        btnOptionC.setText(getResources().getString(R.string.Track_2_1_1_3_3));
+
+        btnOptionA.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                milestone1GoodEnding(false);
+            }
+        });
+        btnOptionB.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                TextView lblStory = findViewById(R.id.lblStory);
+                Typeface font = Typeface.createFromAsset(getAssets(),"fonts/TitleFont.ttf");
+                lblStory.setText(getResources().getString(R.string.m1beRun));
+                lblStory.setTypeface(font);
+
+                Button btnOptionA = findViewById(R.id.btnOptionA);
+                btnOptionA.setVisibility(View.INVISIBLE);
+
+                Button btnOptionB = findViewById(R.id.btnOptionB);
+                btnOptionB.setText(getResources().getString(R.string.cont));
+
+                Button btnOptionC = findViewById(R.id.btnOptionC);
+                btnOptionC.setVisibility(View.INVISIBLE);
+
+                btnOptionB.setOnClickListener(new View.OnClickListener(){
+                    public void onClick(View v) {
+                        startMilestone1BadEnding2();
+                    }
+                });
+            }
+        });
+        btnOptionC.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                milestone1GoodEnding(true);
+            }
+        });
+    }
+
+    public void milestone1GoodEnding(boolean scream){
+        TextView lblStory = findViewById(R.id.lblStory);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/TitleFont.ttf");
+        lblStory.setTypeface(font);
+        if(scream) {
+            lblStory.setText(getResources().getString(R.string.m1ge));
+            Button btnOptionA = findViewById(R.id.btnOptionA);
+            btnOptionA.setVisibility(View.INVISIBLE);
+
+            Button btnOptionB = findViewById(R.id.btnOptionB);
+            btnOptionB.setText(getResources().getString(R.string.cont));
+
+            Button btnOptionC = findViewById(R.id.btnOptionC);
+            btnOptionC.setVisibility(View.INVISIBLE);
+
+            btnOptionB.setOnClickListener(new View.OnClickListener(){
+                public void onClick(View v){
+                    TextView lblStory = findViewById(R.id.lblStory);
+                    Typeface font = Typeface.createFromAsset(getAssets(), "fonts/TitleFont.ttf");
+                    lblStory.setTypeface(font);
+
+                    lblStory.setText(getResources().getString(R.string.m1ge2));
+                }
+            });
+        }
+        else{
+            startMilestone1BadEnding2();
+        }
+
+
     }
 }

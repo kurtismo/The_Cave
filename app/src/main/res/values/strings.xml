@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">The Cave</string>
     <string name="die">Die</string>
+    <string name="beenBefore">What will you do?</string>
+    <string name="cont">\*Continue\*</string>
 
     <string name="StoryIntro1">You wake up inside what appears to be some kind of cave.
     You sit and wonder for a while. You have no idea how you got here. All you can remember
@@ -68,5 +70,26 @@
     thud makes you want to be sick! Out of the shadows charges a beast that can only have come
     from a nightmare. You attempt to run but it has already caught up. In one swift stomp your
     story has come to an end. Embarrassingly, you didn\'t even make it out of the first room.</string>
+
+    <string name="Track_2_1_1_3_0">You start to walk towards the light in the distance. You notice
+    that you have very little grip on the ground and will have to watch your step to avoid falling.
+    A rhythmic thudding echoes from behind you, getting louder. You probably don\'t want to be here when
+    whatever it is gets here.</string>
+
+    <string name="Track_2_1_1_3_1">Keep walking towards the light</string>
+    <string name="Track_2_1_1_3_2">Start to run</string>
+    <string name="Track_2_1_1_3_3">Scream for help</string>
+
+    <string name="m1beRun">Despite your better judgement, you start to run! For about 3 steps, it works brilliantly. However, on the
+    fourth step your grip fails you, and you fall painfully to the ground. You may be able to get away still&#8230;</string>
+
+    <string name="m1ge">The footsteps get faster and louder until the sheer bass of each
+    thud makes you want to be sick! Out of the shadows charges a beast that can only have come
+    from a nightmare. You\'ll never make it out. You sit and make peace with your last moments&#8230;</string>
+
+    <string name="m1ge2">With a flash of light and a deafening explosion, you are momentarily blinded. Are you dead? After a few
+    seconds you reopen your eyes to see the giant beast laying in front of you. You have no idea whether it is dead
+    or merely knocked out, but you know that somebody or something must have caused this. Perhaps somebody heard your
+    screaming?</string>
 
 </resources>
