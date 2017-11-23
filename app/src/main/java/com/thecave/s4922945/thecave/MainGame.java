@@ -108,5 +108,6 @@ public class MainGame extends AppCompatActivity {
         btnOptionC.setText(getResources().getString(R.string.Track2StartOption2));
 
         System.out.println("Billy is Gay!");
+        System.out.println("New change!");
     }
 }
