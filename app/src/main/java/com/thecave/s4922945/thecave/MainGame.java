@@ -108,5 +108,6 @@ public class MainGame extends AppCompatActivity {
         btnOptionC.setText(getResources().getString(R.string.Track2StartOption2));
 
         System.out.println("Kurtis sucks so much dick!");
+        System.out.println("Kurtis sucks too much dick!");
     }
 }
