@@ -165,12 +165,6 @@ public class MainGame extends AppCompatActivity {
 
     }
 
-    public void Track1_1_2() {
-        
-    }
-
-
-
     public void startOption2Track() {
         TextView lblStory = findViewById(R.id.lblStory);
         Typeface font = Typeface.createFromAsset(getAssets(), "fonts/TitleFont.ttf");
@@ -195,11 +189,4 @@ public class MainGame extends AppCompatActivity {
 
     }
 
-    public void Track2_1_1() {
-
-    }
-
-    public void Track17_1_1() {
-        
-    }
 }
