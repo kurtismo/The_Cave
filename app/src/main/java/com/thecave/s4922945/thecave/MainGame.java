@@ -88,10 +88,8 @@ public class MainGame extends AppCompatActivity {
 
         Button btnOptionC = findViewById(R.id.btnOptionC);
         btnOptionC.setText(getResources().getString(R.string.Track1StartOption3));
-        System.out.println("Billy is Gay!");
-        System.out.println("New change!");
-        System.out.println("New change!");
-        System.out.println("New change!");
+
+        System.out.println("Kurtis is Gay!");
 
     }
 
