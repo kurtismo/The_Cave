@@ -109,5 +109,7 @@ public class MainGame extends AppCompatActivity {
 
         System.out.println("Billy is Gay!");
         System.out.println("New change!");
+        System.out.println("New change!");
+        System.out.println("New change!");
     }
 }
