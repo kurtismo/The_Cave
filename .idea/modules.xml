@@ -4,10 +4,8 @@
     <modules>
       <module fileurl="file://C:\Users\Billy\Documents\The_Cave\TheCave.iml" filepath="C:\Users\Billy\Documents\The_Cave\TheCave.iml" />
       <module fileurl="file://$PROJECT_DIR$/The_Cave.iml" filepath="$PROJECT_DIR$/The_Cave.iml" />
-      <module fileurl="file://C:\Users\kurti\AndroidStudioProjects\TheCaveFinal\The_Cave\The_Cave.iml" filepath="C:\Users\kurti\AndroidStudioProjects\TheCaveFinal\The_Cave\The_Cave.iml" />
       <module fileurl="file://C:\Users\kurti\AndroidStudioProjects\TheCave\The_Cave.iml" filepath="C:\Users\kurti\AndroidStudioProjects\TheCave\The_Cave.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\kurti\AndroidStudioProjects\TheCaveFinal\The_Cave\app\app.iml" filepath="C:\Users\kurti\AndroidStudioProjects\TheCaveFinal\The_Cave\app\app.iml" />
     </modules>
   </component>
 </project>

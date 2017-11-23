@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">The Cave</string>
+    <string name="die">Die</string>
 
     <string name="StoryIntro1">You wake up inside what appears to be some kind of cave.
     You sit and wonder for a while. You have no idea how you got here. All you can remember
@@ -42,7 +43,7 @@
     <string name="Track2StartOption1">Pick up the rock</string>
     <string name="Track2StartOption2">Try something else</string>
 
-    <string name="Track2Option1Intro">You pull the rock but it doesn\'t come away from the ground.
+    <string name="Track2_1_0">You pull the rock but it doesn\'t come away from the ground.
     Instead, it moves about an inch or so towards you before stopping abruptly. You hear a faint click.
     Much to your amazement, a wall some way ahead of you appears to slide away, revealing a dim light in the distance.
     I hope you\'re alone in here, because the screeching of the wall as it slid away would have awoken anyone&#8230;</string>
@@ -51,5 +52,21 @@
     <string name="Track2_1_2">\"Hello?\"</string>
     <string name="Track2_1_3">Follow the light</string>
 
+    <string name="Milestone1BadEndingHiddenIntro">In the darkness it\'s difficult to see where would be
+    best to hide, but in your infinite wisdom you crouch down by a wall. You are repulsed by the stench as slime
+    from the walls drips down onto your head and neck. In the distance, but getting louder, you hear what sounds
+    like foot prints. \"Maybe it\'s a big friendly giant\" \- You think to yourself.</string>
+
+    <string name="Milestone1BadEnding">In the distance, but getting louder, you hear what sounds
+    like foot prints. \"Maybe it\'s a big friendly giant\" \- You think to yourself.</string>
+
+    <string name="m1be_1">Remain %1$s</string>
+    <string name="m1be_2">\"I mean you no harm\!\"</string>
+    <string name="m1be_3">Stand strong, you could take it on!</string>
+
+    <string name="m1beDeath">The footsteps get faster and louder until the sheer bass of each
+    thud makes you want to be sick! Out of the shadows charges a beast that can only have come
+    from a nightmare. You attempt to run but it has already caught up. In one swift stomp your
+    story has come to an end. Embarrassingly, you didn\'t even make it out of the first room.</string>
 
 </resources>
