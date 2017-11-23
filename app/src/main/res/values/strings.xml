@@ -28,8 +28,12 @@
     <string name="Track1_1_2">Pat around to see what you can find</string>
     <string name="Track1_1_3">Scream for help</string>
 
-    <string name ="Track1_1_1story">You pound on the wall like your life depends on it (it might do)
-     but to no avail. There's no give</string>
+    <string name ="Track1_1_1story">You pound against the cold, slimy wall like your life depends on it (it might do)
+     but to no avail. There\'s no give. You\'re going to have to try something else!</string>
+
+    <string name="Track1_1_1_1">Give up</string>
+    <string name="Track1_1_1_2">Pat around to see what you can find (Take the hint)</string>
+    <string name="Track1_1_1_3">Scream for help</string>
 
 
     <string name="Track2Intro">It appears that your suspicions were correct, %1$s, you ARE in a cave! Other than a solitary
