@@ -19,6 +19,19 @@
     <string name="Track1StartOption2">Pat around to see what you can find</string>
     <string name="Track1StartOption3">Squint your eyes and look harder</string>
 
+
+    <string name ="Track1Option1story">You fumble through the pitch black. A stench of damp and decay
+    rises up into your nostrils. Wherever you are, it\'s not a good place to be. You eventually find a
+    wall. What next?</string>
+
+    <string name="Track1_1_1">Try to break through the wall</string>
+    <string name="Track1_1_2">Pat around to see what you can find</string>
+    <string name="Track1_1_3">Scream for help</string>
+
+    <string name ="Track1_1_1story">You pound on the wall like your life depends on it (it might do)
+     but to no avail. There's no give</string>
+
+
     <string name="Track2Intro">It appears that your suspicions were correct, %1$s, you ARE in a cave! Other than a solitary
         rock, you find little of interest.</string>
 
