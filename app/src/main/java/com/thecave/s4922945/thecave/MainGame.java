@@ -155,13 +155,13 @@ public class MainGame extends AppCompatActivity {
         lblStory.setTypeface(font);
 
         Button btnOptionA = findViewById(R.id.btnOptionA);
-        btnOptionA.setText(getResources().getString(R.string.Track1_1_1));
+        btnOptionA.setText(getResources().getString(R.string.Track1_1_1_1));
 
         Button btnOptionB = findViewById(R.id.btnOptionB);
-        btnOptionB.setText(getResources().getString(R.string.Track1_1_2));
+        btnOptionB.setText(getResources().getString(R.string.Track1_1_1_2));
 
         Button btnOptionC = findViewById(R.id.btnOptionC);
-        btnOptionC.setText(getResources().getString(R.string.Track1_1_3));
+        btnOptionC.setText(getResources().getString(R.string.Track1_1_1_3));
 
     }
 
