@@ -88,16 +88,13 @@ public class MainGame extends AppCompatActivity {
 
         Button btnOptionC = findViewById(R.id.btnOptionC);
         btnOptionC.setText(getResources().getString(R.string.Track1StartOption3));
-
-        System.out.println("Kurtis is Gay!");
-
     }
 
     public void startOption2Track() {
         TextView lblStory = findViewById(R.id.lblStory);
         Typeface font = Typeface.createFromAsset(getAssets(), "fonts/TitleFont.ttf");
 
-        lblStory.setText(getResources().getString(R.string.Track2Intro));
+        lblStory.setText(getResources().getString(R.string.Track2Intro, playerName));
         lblStory.setTypeface(font);
 
         Button btnOptionA = findViewById(R.id.btnOptionA);
@@ -109,11 +106,27 @@ public class MainGame extends AppCompatActivity {
         Button btnOptionC = findViewById(R.id.btnOptionC);
         btnOptionC.setText(getResources().getString(R.string.Track2StartOption2));
 
-        System.out.println("Hi there");
-        System.out.println("Hi there");
-        System.out.println("Hi there");
-        System.out.println("Hi there");
+        btnOptionA.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startTrack2Option1();
+            }
+        });
+    }
 
+    public void startTrack2Option1() {
+        TextView lblStory = findViewById(R.id.lblStory);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/TitleFont.ttf");
 
+        lblStory.setText(getResources().getString(R.string.Track2Option1Intro));
+        lblStory.setTypeface(font);
+
+        Button btnOptionA = findViewById(R.id.btnOptionA);
+        btnOptionA.setText(getResources().getString(R.string.Track2_1_1));
+
+        Button btnOptionB = findViewById(R.id.btnOptionB);
+        btnOptionB.setText(getResources().getString(R.string.Track2_1_2));
+
+        Button btnOptionC = findViewById(R.id.btnOptionC);
+        btnOptionC.setText(getResources().getString(R.string.Track2_1_3));
     }
 }

@@ -24,4 +24,15 @@
 
     <string name="Track2StartOption1">Pick up the rock</string>
     <string name="Track2StartOption2">Try something else</string>
+
+    <string name="Track2Option1Intro">You pull the rock but it doesn\'t come away from the ground.
+    Instead, it moves about an inch or so towards you before stopping abruptly. You hear a faint click.
+    Much to your amazement, a wall some way ahead of you appears to slide away, revealing a dim light in the distance.
+    I hope you\'re alone in here, because the screeching of the wall as it slid away would have awoken anyone&#8230;</string>
+
+    <string name="Track2_1_1">Find somewhere to hide</string>
+    <string name="Track2_1_2">\"Hello?\"</string>
+    <string name="Track2_1_3">Follow the light</string>
+
+
 </resources>
