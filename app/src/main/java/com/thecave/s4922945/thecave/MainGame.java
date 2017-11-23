@@ -165,11 +165,6 @@ public class MainGame extends AppCompatActivity {
 
     }
 
-    public void Track1_1_2() {
-        
-    }
-
-
 
     public void startOption2Track() {
         TextView lblStory = findViewById(R.id.lblStory);
@@ -187,19 +182,28 @@ public class MainGame extends AppCompatActivity {
         Button btnOptionC = findViewById(R.id.btnOptionC);
         btnOptionC.setText(getResources().getString(R.string.Track2StartOption2));
 
-        System.out.println("Hi there");
-        System.out.println("Hi there");
-        System.out.println("Hi there");
-        System.out.println("Hi there");
-
-
-    }
-
-    public void Track2_1_1() {
+        btnOptionA.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Track_2_1_1();
+            }
+        });
 
     }
 
-    public void Track17_1_1() {
+    public void Track_2_1_1() {
+        TextView lblStory = findViewById(R.id.lblStory);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/TitleFont.ttf");
 
+        lblStory.setText(getResources().getString(R.string.Track2_1_0));
+        lblStory.setTypeface(font);
+
+        Button btnOptionA = findViewById(R.id.btnOptionA);
+        btnOptionA.setText(getResources().getString(R.string.Track2_1_1));
+
+        Button btnOptionB = findViewById(R.id.btnOptionB);
+        btnOptionB.setText(getResources().getString(R.string.Track2_1_2));
+
+        Button btnOptionC = findViewById(R.id.btnOptionC);
+        btnOptionC.setText(getResources().getString(R.string.Track2_1_3));
     }
 }
