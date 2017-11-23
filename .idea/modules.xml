@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TheCave.iml" filepath="$PROJECT_DIR$/TheCave.iml" />
-      <module fileurl="file://C:\Users\kurti\AndroidStudioProjects\TheCave\.idea\The_Cave.iml" filepath="C:\Users\kurti\AndroidStudioProjects\TheCave\.idea\The_Cave.iml" />
+      <module fileurl="file://$PROJECT_DIR$/The_Cave.iml" filepath="$PROJECT_DIR$/The_Cave.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
