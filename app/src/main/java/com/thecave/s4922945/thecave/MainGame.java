@@ -107,6 +107,6 @@ public class MainGame extends AppCompatActivity {
         Button btnOptionC = findViewById(R.id.btnOptionC);
         btnOptionC.setText(getResources().getString(R.string.Track2StartOption2));
 
-        System.out.println("Billy is Gay!");
+        System.out.println("Kurtis sucks so much dick!");
     }
 }
