@@ -89,9 +89,83 @@ public class MainGame extends AppCompatActivity {
         Button btnOptionC = findViewById(R.id.btnOptionC);
         btnOptionC.setText(getResources().getString(R.string.Track1StartOption3));
 
-        System.out.println("Kurtis is Gay!");
+        btnOptionA.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                //When button pressed, creates a variable for the text field then stores the text into playerName
+                Track1_1();
+            }
+        });
+
+        btnOptionB.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                //When button pressed, creates a variable for the text field then stores the text into playerName
+                Track1_2();
+            }
+        });
 
     }
+
+    public void Track1_1() {
+        TextView lblStory = findViewById(R.id.lblStory);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/TitleFont.ttf");
+
+        lblStory.setText(getResources().getString(R.string.Track1Option1story));
+        lblStory.setTypeface(font);
+
+        Button btnOptionA = findViewById(R.id.btnOptionA);
+        btnOptionA.setText(getResources().getString(R.string.Track1_1_1));
+
+        Button btnOptionB = findViewById(R.id.btnOptionB);
+        btnOptionB.setText(getResources().getString(R.string.Track1_1_2));
+
+        Button btnOptionC = findViewById(R.id.btnOptionC);
+        btnOptionC.setText(getResources().getString(R.string.Track1_1_3));
+
+        btnOptionA.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                //When button pressed, creates a variable for the text field then stores the text into playerName
+                Track1_1_1();
+            }
+        });
+    }
+
+    public void Track1_2() {
+        TextView lblStory = findViewById(R.id.lblStory);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/TitleFont.ttf");
+
+        lblStory.setText(getResources().getString(R.string.Track1Option1story));
+        lblStory.setTypeface(font);
+
+        Button btnOptionA = findViewById(R.id.btnOptionA);
+        btnOptionA.setText(getResources().getString(R.string.Track1_1_1));
+
+        Button btnOptionB = findViewById(R.id.btnOptionB);
+        btnOptionB.setText(getResources().getString(R.string.Track1_1_2));
+
+        Button btnOptionC = findViewById(R.id.btnOptionC);
+        btnOptionC.setText(getResources().getString(R.string.Track1_1_3));
+
+    }
+
+    public void Track1_1_1() {
+        TextView lblStory = findViewById(R.id.lblStory);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/TitleFont.ttf");
+
+        lblStory.setText(getResources().getString(R.string.Track1_1_1story));
+        lblStory.setTypeface(font);
+
+        Button btnOptionA = findViewById(R.id.btnOptionA);
+        btnOptionA.setText(getResources().getString(R.string.Track1_1_1));
+
+        Button btnOptionB = findViewById(R.id.btnOptionB);
+        btnOptionB.setText(getResources().getString(R.string.Track1_1_2));
+
+        Button btnOptionC = findViewById(R.id.btnOptionC);
+        btnOptionC.setText(getResources().getString(R.string.Track1_1_3));
+
+    }
+
+
 
     public void startOption2Track() {
         TextView lblStory = findViewById(R.id.lblStory);
