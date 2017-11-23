@@ -5,5 +5,17 @@
     You sit and wonder for a while. You have no idea how you got here. All you can remember
     is your name. What was that again?</string>
 
-    <string name="StoryIntro2">Aaah yes, that was it: %1$s!</string>
+    <string name="StoryIntro2">Aaah yes, that was it: %1$s! Right then %1$s, you\'re in a bit of
+    a sticky situation here. What are you going to do first?</string>
+
+    <string name="StartOption1">Stand up and look around</string>
+    <string name="StartOption2">Pat around to see what you can find</string>
+    <string name="StartOption3">Lay down and cry</string>
+
+    <string name="Track1Intro">See, that would have been a smart idea if it wasn\'t so fucking
+    dark in here! You can\'t see anything, what\'s your next move?</string>
+
+    <string name="Track1StartOption1">Fumble around and find a wall</string>
+    <string name="Track1StartOption2">Pat around to see what you can find</string>
+    <string name="Track1StartOption3">Squint your eyes and look harder</string>
 </resources>

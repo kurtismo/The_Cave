@@ -5,15 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:context="com.thecave.s4922945.thecave.MainGame">
+    tools:context="com.thecave.s4922945.thecave.MainGame"
+    tools:layout_editor_absoluteY="25dp">
 
 
     <TextView
         android:id="@+id/lblStory"
-        android:layout_width="310dp"
-        android:layout_height="214dp"
+        android:layout_width="300dp"
+        android:layout_height="249dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="28dp"
         android:text="TextView"
         android:textAlignment="center"
@@ -27,57 +30,76 @@
         android:id="@+id/txtInput"
         android:layout_width="214dp"
         android:layout_height="47dp"
-        android:layout_marginEnd="108dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:digits=" ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
         android:ems="10"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/btnConfirm"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnConfirm"
         android:layout_width="165dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginStart="120dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:text="Confirm"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/btnOptionA"
         app:layout_constraintDimensionRatio="h,"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnOptionA"
-        android:layout_width="339dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="22dp"
+        android:layout_width="286dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/shape"
         android:text="Button"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/btnOptionB"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblStory" />
 
     <Button
         android:id="@+id/btnOptionC"
-        android:layout_width="339dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="34dp"
-        android:layout_marginEnd="23dp"
+        android:layout_width="286dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape"
         android:text="Button"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOptionB" />
 
     <Button
         android:id="@+id/btnOptionB"
-        android:layout_width="339dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="9dp"
-        android:layout_marginEnd="22dp"
+        android:layout_width="286dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape"
         android:text="Button"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/btnOptionC"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOptionA" />
 </android.support.constraint.ConstraintLayout>
