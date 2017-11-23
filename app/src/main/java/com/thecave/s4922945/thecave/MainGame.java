@@ -65,6 +65,12 @@ public class MainGame extends AppCompatActivity {
             }
         });
 
+        btnOptionB.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startOption2Track();
+            }
+        });
+
     }
 
     public void startOption1Track () {
@@ -83,5 +89,22 @@ public class MainGame extends AppCompatActivity {
         Button btnOptionC = findViewById(R.id.btnOptionC);
         btnOptionC.setText(getResources().getString(R.string.Track1StartOption3));
 
+    }
+
+    public void startOption2Track() {
+        TextView lblStory = findViewById(R.id.lblStory);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/TitleFont.ttf");
+
+        lblStory.setText(getResources().getString(R.string.Track2Intro));
+        lblStory.setTypeface(font);
+
+        Button btnOptionA = findViewById(R.id.btnOptionA);
+        btnOptionA.setText(getResources().getString(R.string.Track2StartOption1));
+
+        Button btnOptionB = findViewById(R.id.btnOptionB);
+        btnOptionB.setText(getResources().getString(R.string.Track2StartOption2));
+
+        Button btnOptionC = findViewById(R.id.btnOptionC);
+        btnOptionC.setText(getResources().getString(R.string.Track2StartOption2));
     }
 }

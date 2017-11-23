@@ -12,10 +12,16 @@
     <string name="StartOption2">Pat around to see what you can find</string>
     <string name="StartOption3">Lay down and cry</string>
 
-    <string name="Track1Intro">See, that would have been a smart idea if it wasn\'t so fucking
-    dark in here! You can\'t see anything, what\'s your next move?</string>
+    <string name="Track1Intro">See, that would have been a smart idea if it wasn\'t so
+        dark in here! You can\'t see anything, what\'s your next move?</string>
 
     <string name="Track1StartOption1">Fumble around and find a wall</string>
     <string name="Track1StartOption2">Pat around to see what you can find</string>
     <string name="Track1StartOption3">Squint your eyes and look harder</string>
+
+    <string name="Track2Intro">It appears that your suspicions were correct, %1$s, you ARE in a cave! Other than a solitary
+        rock, you find little of interest.</string>
+
+    <string name="Track2StartOption1">Pick up the rock</string>
+    <string name="Track2StartOption2">Try something else</string>
 </resources>
