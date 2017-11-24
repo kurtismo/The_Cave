@@ -15,17 +15,27 @@
     <string name="StartOption2">Pat around to see what you can find</string>
     <string name="StartOption3">Lay down and cry</string>
 
-    <string name="Track1Intro">See, that would have been a smart idea if it wasn\'t so
-        dark in here! You can\'t see anything, what\'s your next move?</string>
+    <string name="cryStory">The magnitude of your situation is just too much for you to handle, and you collapse
+     to the floor in a heap crying uncontrollably. Your situation goes from bad to worse when you hear a low growl
+    in the distance. You can\'t stifle your cries and the growling gets closer and closer..</string>
 
-    <string name="Track1StartOption1">Fumble around and find a wall</string>
+    <string name="cryEnding">A beast of unknown origins pounces out from the darkness. You know this is the end, your last thought
+     as the terrifying creature sinks it\'s teeth into your flesh is, "\"I just wish I had tried something else\""</string>
+
+    <string name="Track1Intro">You stand up and try to look around but you can barely see your own hand
+        outstretched in front of your face. This isn\'t going to work. What\'s your next move?</string>
+
+    <string name="Track1StartOption1">Fumble around until you hit something</string>
     <string name="Track1StartOption2">Pat around to see what you can find</string>
     <string name="Track1StartOption3">Squint your eyes and look harder</string>
-
 
     <string name ="Track1Option1story">You fumble through the pitch black. A stench of damp and decay
     rises up into your nostrils. Wherever you are, it\'s not a good place to be. You eventually find a
     wall. What next?</string>
+
+    <string name="Track1_2Story">You squint your eyes, almost willing them to adjust to the dark. Unfortunately,
+     it does look like you\'re in a cave! You can make out the walls, and the floor is scattered with rocks and debris.
+    What do you want to do?</string>
 
     <string name="Track1_1_1">Try to break through the wall</string>
     <string name="Track1_1_2">Pat around to see what you can find</string>
@@ -34,13 +44,30 @@
     <string name ="Track1_1_1story">You pound against the cold, slimy wall like your life depends on it (it might do)
      but to no avail. There\'s no give. You\'re going to have to try something else!</string>
 
+    <string name ="Track1_1_3Story">You\'re feeling hopeless, maybe someone else is nearby. You scream at the
+    top of your lungs. Your voice echoes around the walls. Nothing. Until you hear the words that send a shiver up
+     your spine, "\"It\'s always more fun when they\'re awake\"". You spin round to see three hooded figures approaching. "\"Now what limb
+    should we start with first?\"". </string>
+
+    <string name="Track1Death">They let out a sickening laugh as you continue to scream, there\'s no escape, there\'s no hope, there\'s
+     no more you can do&#8230;</string>
+
     <string name="Track1_1_1_1">Give up</string>
     <string name="Track1_1_1_2">Pat around to see what you can find (Take the hint)</string>
     <string name="Track1_1_1_3">Scream for help</string>
 
+    <string name="giveUp">A feeling of dread washes over you, you were never cut out for this. Your survival instinct
+    just isn\'t strong enough to get you through this ordeal. You lie down on the damp floor, close your eyes and pray that
+    death takes you quickly&#8230;</string>
 
-    <string name="Track2Intro">It appears that your suspicions were correct, %1$s, you ARE in a cave! Other than a solitary
-        rock, you find little of interest.</string>
+    <string name="giveUpEnding">"\"Another body! This one looks like it\'s been here for months\"", proclaims a member of
+    the exploration crew that surrounds your now decaying corpse. "\"What on earth is happening inside this cave, we need
+    to get the hell out of here now!\""</string>
+
+    <string name="gameOver">"Game over"</string>
+
+
+    <string name="Track2Intro">Upon searching the floor, you find a rock much larger than the others amongst the debris.</string>
 
     <string name="Track2StartOption1">Pick up the rock</string>
     <string name="Track2StartOption2">Try something else</string>
