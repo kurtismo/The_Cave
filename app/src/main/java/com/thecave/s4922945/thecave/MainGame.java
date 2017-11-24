@@ -82,7 +82,66 @@ public class MainGame extends AppCompatActivity {
             }
         });
 
+        btnOptionC.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                cryTrack();
+            }
+        });
+
     }
+
+    public void cryTrack () {
+
+        TextView lblStory = findViewById(R.id.lblStory);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/TitleFont.ttf");
+
+        lblStory.setText(getResources().getString(R.string.cryStory));
+        lblStory.setTypeface(font);
+
+        Button btnOptionA = findViewById(R.id.btnOptionA);
+        btnOptionA.setVisibility(View.GONE);
+
+        Button btnOptionB = findViewById(R.id.btnOptionB);
+        btnOptionB.setText(getResources().getString(R.string.cont));
+
+        Button btnOptionC = findViewById(R.id.btnOptionC);
+        btnOptionC.setVisibility(View.GONE);
+
+        btnOptionB.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                cryEnding();
+            }
+        });
+
+    }
+
+    public void cryEnding() {
+        TextView lblStory = findViewById(R.id.lblStory);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/TitleFont.ttf");
+
+        lblStory.setText(getResources().getString(R.string.cryEnding));
+        lblStory.setTypeface(font);
+
+        Button btnOptionA = findViewById(R.id.btnOptionA);
+        btnOptionA.setVisibility(View.GONE);
+
+        Button btnOptionB = findViewById(R.id.btnOptionB);
+        btnOptionB.setText(getResources().getString(R.string.die));
+
+        Button btnOptionC = findViewById(R.id.btnOptionC);
+        btnOptionC.setVisibility(View.GONE);
+
+
+        btnOptionB.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                Intent intent = new Intent(MainGame.this, StartScreen.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+
+
 
     public void startOption1Track () {
         TextView lblStory = findViewById(R.id.lblStory);
@@ -113,6 +172,12 @@ public class MainGame extends AppCompatActivity {
         btnOptionB.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startOption2Track();
+            }
+        });
+
+        btnOptionC.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Track1_3();
             }
         });
 
@@ -148,11 +213,11 @@ public class MainGame extends AppCompatActivity {
         });
     }
 
-    public void Track1_2() {
+    public void Track1_3() {
         TextView lblStory = findViewById(R.id.lblStory);
         Typeface font = Typeface.createFromAsset(getAssets(), "fonts/TitleFont.ttf");
 
-        lblStory.setText(getResources().getString(R.string.Track1Option1story));
+        lblStory.setText(getResources().getString(R.string.Track1_2Story));
         lblStory.setTypeface(font);
 
         Button btnOptionA = findViewById(R.id.btnOptionA);
@@ -164,9 +229,22 @@ public class MainGame extends AppCompatActivity {
         Button btnOptionC = findViewById(R.id.btnOptionC);
         btnOptionC.setText(getResources().getString(R.string.Track1_1_3));
 
+        btnOptionA.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                //When button pressed, creates a variable for the text field then stores the text into playerName
+                Track1_1_1();
+            }
+        });
+
         btnOptionB.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
                 startOption2Track();
+            }
+        });
+
+        btnOptionC.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                Track1_1_3();
             }
         });
 
@@ -188,9 +266,122 @@ public class MainGame extends AppCompatActivity {
         Button btnOptionC = findViewById(R.id.btnOptionC);
         btnOptionC.setText(getResources().getString(R.string.Track1_1_1_3));
 
+        btnOptionA.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                Track1_1_1_1();
+            }
+        });
+
         btnOptionB.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
                 startOption2Track();
+            }
+        });
+
+        btnOptionC.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                Track1_1_3();
+            }
+        });
+    }
+
+    public void Track1_1_1_1() {
+
+        TextView lblStory = findViewById(R.id.lblStory);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/TitleFont.ttf");
+
+        lblStory.setText(getResources().getString(R.string.giveUp));
+        lblStory.setTypeface(font);
+
+        Button btnOptionA = findViewById(R.id.btnOptionA);
+        btnOptionA.setVisibility(View.GONE);
+
+        Button btnOptionB = findViewById(R.id.btnOptionB);
+        btnOptionB.setText(getResources().getString(R.string.cont));
+
+        Button btnOptionC = findViewById(R.id.btnOptionC);
+        btnOptionC.setVisibility(View.GONE);
+
+        btnOptionB.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                giveUpEnding();
+            }
+        });
+
+    }
+
+    public void giveUpEnding() {
+
+        TextView lblStory = findViewById(R.id.lblStory);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/TitleFont.ttf");
+
+        lblStory.setText(getResources().getString(R.string.giveUpEnding));
+        lblStory.setTypeface(font);
+
+        Button btnOptionA = findViewById(R.id.btnOptionA);
+        btnOptionA.setVisibility(View.GONE);
+
+        Button btnOptionB = findViewById(R.id.btnOptionB);
+        btnOptionB.setText(getResources().getString(R.string.gameOver));
+
+        Button btnOptionC = findViewById(R.id.btnOptionC);
+        btnOptionC.setVisibility(View.GONE);
+
+
+        btnOptionB.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                Intent intent = new Intent(MainGame.this, StartScreen.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+
+    public void Track1_1_3() {
+        TextView lblStory = findViewById(R.id.lblStory);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/TitleFont.ttf");
+
+        lblStory.setText(getResources().getString(R.string.Track1_1_3Story));
+        lblStory.setTypeface(font);
+
+        Button btnOptionA = findViewById(R.id.btnOptionA);
+        btnOptionA.setVisibility(View.GONE);
+
+        Button btnOptionB = findViewById(R.id.btnOptionB);
+        btnOptionB.setText(getResources().getString(R.string.cont));
+
+        Button btnOptionC = findViewById(R.id.btnOptionC);
+        btnOptionC.setVisibility(View.GONE);
+
+        btnOptionB.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                track1Death();
+            }
+        });
+
+    }
+
+    public void track1Death() {
+        TextView lblStory = findViewById(R.id.lblStory);
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/TitleFont.ttf");
+
+        lblStory.setText(getResources().getString(R.string.Track1Death));
+        lblStory.setTypeface(font);
+
+        Button btnOptionA = findViewById(R.id.btnOptionA);
+        btnOptionA.setVisibility(View.GONE);
+
+        Button btnOptionB = findViewById(R.id.btnOptionB);
+        btnOptionB.setText(getResources().getString(R.string.die));
+
+        Button btnOptionC = findViewById(R.id.btnOptionC);
+        btnOptionC.setVisibility(View.GONE);
+
+
+        btnOptionB.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                Intent intent = new Intent(MainGame.this, StartScreen.class);
+                startActivity(intent);
             }
         });
     }
@@ -201,7 +392,7 @@ public class MainGame extends AppCompatActivity {
         TextView lblStory = findViewById(R.id.lblStory);
         Typeface font = Typeface.createFromAsset(getAssets(), "fonts/TitleFont.ttf");
 
-        lblStory.setText(getResources().getString(R.string.Track2Intro, playerName));
+        lblStory.setText(getResources().getString(R.string.Track2Intro));
         lblStory.setTypeface(font);
 
         Button btnOptionB = findViewById(R.id.btnOptionB);
